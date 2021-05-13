@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+      <h1>Patrick Kaipainen</h1>
+      <h2>Full-stack developer</h2>
+  </header>
+  <div class="bio-contact">
+    <section class="bio">
+      <h2>👨🏻‍🔧 Bio</h2>
+      <p>
+        I'm an inquisitive, full-stack developer. The layers of abstraction upon which the web depends are crucial in the day-to-day of production, but a part of me always wants to get a closer look at the giants whose shoulders we stand on.
+      </p>
+      <p>
+        I'm self-taught and owe my tenacity for reading documentation and parsing information to advanced education in a field completely unrelated to computer science, having learned how to learn as a graduate student continues to serve me well as a developer.
+      </p>
+      <p>
+        As a former visual artist, I bring an intuitive sense for design; from my time as a licensed electrician, I've imported the ability to solve logical problems honed by troubleshooting circuits.
+        I am open to full-stack and front-end opportunities.
+      </p>
+      <ul>
+        <li>React</li>
+        <li>Node</li>
+        <li>Express</li>
+        <li>PostgreSQL</li>
+      </ul>
+    </section>
+    <section class="contact">
+      <h2>☎️ Contact</h2>
+      <ul>
+        <li class="contactItem"><em>Portfolio: </em><a href="http://patrickkaipainen.com/">patrickkaipainen.com</a></li>
+        <li class="contactItem"><em>Github: </em><a href="https://github.com/Visible-radio">github.com/Visible-radio</a></li>
+        <li class="contactItem"><em>Email: </em><a href="mailto:patrick.kaipainen@gmail.com">patrick.kaipainen@gmail.com</a></li>
+        <li class="contactItem">
+          <span class="contactItem">
+            🔗
+            <a href="https://www.linkedin.com/in/patrick-kaipainen-02745a58">LinkedIn</a>
+          </span>
+        </li>
+        <li>
+          <span class="contactItem">
+            🐦
+            <a href="https://twitter.com/P_Kaipainen">Twitter</a>
+          </span>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <section>
+    <h2>👨🏻‍💻 Experience</h2>
+    <div class="job">
+      <div class="job-headline">
+        <h3>Electrical Trades Job Calls Database Dashboard</h3>
+        <div class="job-tech">
+          <span>React</span>
+          <span>Chart.js</span>
+          <span>Data Visualization</span>
+          <span>CSS in JS</span>
+        </div>
+      </div>
+      <p class="dates"><em>January 2021 - Present</em></p>
+      <p class="link"><a href="https://job-calls-front-end.herokuapp.com/">https://job-calls-front-end.herokuapp.com/</a></p>
+      <div class="description">
+        <p>Built with Chart.js and React.js this dashboard displays trends in demand for the various different trades represented by the IBEW in Toronto, giving the user an at-a-glance index into construction activity in the city.</p>
+      </div>
+    </div>
+    <div class="job">
+      <div class="job-headline">
+        <h3>Electrical Trades Job Calls Database API</h3>
+        <div class="job-tech">
+          <span>PostgreSQL</span>
+          <span>Node</span>
+          <span>Express</span>
+          <span>Scraping</span>
+        </div>
+      </div>
+      <p class="dates"><em>November 2020 - Present</em></p>
+      <p class="link"><a href="https://github.com/Visible-Radio/job-calls-api">https://github.com/Visible-Radio/job-calls-api</a></p>
+      <div class="description">
+        <p>Using Puppeteer I built a scraper that populates an archive of jobs available to members of the Electrical Workers Union in Toronto.  After parsing the DOM the scraper archives the daily job call information in HTML and JSON files.
+          <p>
+            A separate script reads each JSON file, performs some validation, and inserts the data into a PostreSQL database.
+          </p>
+          <p>
+            Information about jobs for specific member classifications and electrical contractors is returned from a server built with Express.js, which handles requests to several endpoints.</p>
+          </p>
+        </div>
+      </div>
+      <div class="job">
+        <div class="job-headline">
+          <h3>React Pixel Text Renderer</h3>
+          <div class="job-tech">
+            <span>React</span>
+            <span>Webpack</span>
+            <span>Babel</span>
+            <span>NPM</span>
+          </div>
+        </div>
+        <p class="dates"><em>November 2020 - Present</em></p>
+        <p class="link"><a href="https://www.npmjs.com/package/react-pixel-text-renderer">https://www.npmjs.com/package/react-pixel-text-renderer</a></p>
+        <div class="description">
+          <p>A reusable React component that renders a string to a canvas element. The output can be customized in several ways by passing props to the component. A companion utility, the Pixel Character Editor can create, read and update user customized character definition files in JSON format.
+        </div>
+      </div>
+      <div class="job">
+        <div class="job-headline">
+          <h3>Canvas Destroyer</h3>
+          <div class="job-tech">
+            <span>Algorithms</span>
+            <span>Canvas API</span>
+            <span>Vanilla Javascript</span>
+            <span>HTML / CSS</span>
+          </div>
+        </div>
+        <p class="dates"><em>January 2021</em></p>
+        <p class="link"><a href="http://patrickkaipainen.com/">http://patrickkaipainen.com/</a></p>
+        <div class="description">
+          <p>An image processing script that directly manipulates the pixel data of two images to insert a 'secret' image into a background.  The pixel data of the background is mapped into a new context, the width of which can be varied. When the width of the new context does not match that of the original image, the resulting picture resembles television 'static.' When the width of the new context does match the original, the picture resolves.</p>
+          <p>The 'secret' image gets inserted into the pixel array of the background, but the point at which it will resolve can be modified. The result is a kind of parallax effect where a different image will be visible depending on the width of the new context the data is mapped into.</p>
+        </div>
+      </div>
+      <div class="job">
+        <div class="job-headline">
+          <h3>Course Instructor at Western University</h3>
+          <div class="job-tech">
+            <span>Teaching</span>
+            <span>Mentorship</span>
+          </div>
+        </div>
+        <p class="dates"><em>2010 - 2012</em></p>
+        <div class="description">
+          <p>I taught courses in the Visual Arts Department at Western as a contract faculty member.</p>
+        </div>
+      </div>
+    </section>
+
+  <div class="education-courses">
+    <section>
+      <h2>📚 Education & Licenses</h2>
+      <div class="degrees">
+        <div class="degree">
+          <h3>Master of Fine Arts</h3>
+          <p><em>2009 Western University</em></p>
+        </div>
+        <div class="degree">
+          <h3>Bachelor of Fine Arts</h3>
+          <p><em>2007 York University</em></p>
+          <p><em>Summa Cum Laude</em></p>
+        </div>
+        <div class="degree">
+          <h3>309A Construction & Mainentance Electrician</h3>
+          <p><em>2019 Ontario</em></p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>📚 Courses</h2>
+      <div class="degrees">
+        <div class="degree">
+          <h3>The Complete Web Developer in 2020</h3>
+          <p><em>Zero to Mastery Academy</em></p>
+        </div>
+        <div class="degree">
+          <h3>CS50</h3>
+          <p><em>Harvard edx</em></p>
+        </div>
+        <div class="degree">
+          <h3>Fullstack Advanced React and GraphQL</h3>
+          <p><em>wesbos.com</em></p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  :root {
+    --lightBlack: rgb(60,60,60);
+    --myMagenta: rgb(220,0,190);
+    --almostWhite: rgb(250,250,250);
+    --grey: rgb(100,100,100);
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: var(--almostWhite);
+    color: var(--lightBlack);
+  }
+
+  a, a:visited {
+    color: var(--myMagenta);
+    font-weight: 400;
+  }
+
+  .contactItem a {
+    color: var(--grey);
+  }
+
+  a:hover {
+    color: var(--myMagenta);
+    filter: brightness(1.5);
+    transition: all 0.3s;
+  }
+
+  h1, h2 {
+    min-width: max-content;
+    margin: 0;
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+
+  h2:not(header h2){
+    font-weight: 500;
+    border-bottom: 1px solid var(--lightBlack);
+  }
+
+  h3 {
+    font-weight: 500;
+  }
+
+  em {
+    font-weight: 700;
+  }
+
+  .job em {
+    font-weight: 400;
+  }
+
+  section {
+    max-width: 100%;
+    margin: 1.5rem 0;
+    padding: 0;
+  }
+
+  p {
+    font-weight: 400;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    font-weight: 500;
+    list-style: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    border-bottom: 3px solid var(--myMagenta);
+  }
+  @media screen and (max-width:700px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  div.bio-contact {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-gap: 3rem;
+  }
+
+  div.job {
+    border-bottom: 1px solid var(--lightBlack);
+    margin-bottom: 2rem;
+  }
+
+  div.job-headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 -1rem 0;
+  }
+
+  div.job-tech {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .job-tech span {
+    margin: 0 0 0 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--lightBlack);
+    border-radius: 1rem;
+  }
+
+  .dates em, .degree em {
+    color: var(--grey);
+    font-weight: 500;
+  }
+
+  div.degree {
+    border-bottom: 1px solid var(--lightBlack);
+  }
+
+  div.education-courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: auto;
+    line-height: 2.5;
+  }
+
+  div.socialLinks {
+    width: 100%;
+  }
+
+  .contactItem {
+    margin: 0 2rem 0 0;
+  }
+
+  .bio ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bio li {
+    margin: 0 1rem;
+  }
+
+</style>
+</body>
+</html>
