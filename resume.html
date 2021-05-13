@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Patrick Kaipainen's Resume</title>
 </head>
 <body>
   <header>
@@ -15,13 +15,12 @@
     <section class="bio">
       <h2>👨🏻‍🔧 Bio</h2>
       <p>
-        I'm an inquisitive, full-stack developer. The layers of abstraction upon which the web depends are crucial in the day-to-day of production, but a part of me always wants to get a closer look at the giants whose shoulders we stand on.
+        I'm an inquisitive full-stack developer. I love seeing how all the pieces fit together to create a whole, and a part of me always wants to take a look at how some taken for granted feature is implemented under the hood.
       </p>
       <p>
-        I'm self-taught and owe my tenacity for reading documentation and parsing information to advanced education in a field completely unrelated to computer science, having learned how to learn as a graduate student continues to serve me well as a developer.
+        As a former visual artist and instructor at Western University, I bring an intuitive feel for design, a soft touch, and a sensitivity to the non-technical aspects of production. From my time as a licensed electrician, I've imported an ability to solve logical problems honed by troubleshooting circuits, and a 'nothing personal' philosophy when it comes to receiving critical feedback.
       </p>
       <p>
-        As a former visual artist, I bring an intuitive sense for design; from my time as a licensed electrician, I've imported the ability to solve logical problems honed by troubleshooting circuits.
         I am open to full-stack and front-end opportunities.
       </p>
       <ul>
@@ -135,7 +134,7 @@
         </div>
         <p class="dates"><em>2010 - 2012</em></p>
         <div class="description">
-          <p>I taught courses in the Visual Arts Department at Western as a contract faculty member.</p>
+          <p>I guided students in the development of their own creative practices as a contract faculty member at the Western University Visual Arts Department. This included technical instruction in photography, photoshop, and Adobe Creative Suite, discussions around art theory, and facilitation of 'critiques' - loosely structured open forums in which students present their work to peers and faculty. The purpose of these conversations is a kind of discovery process that can illuminate new paths forward on the student's creative journey.</p>
         </div>
       </div>
     </section>
@@ -278,12 +277,6 @@
     max-width: 100%;
     border-bottom: 3px solid var(--myMagenta);
   }
-  @media screen and (max-width:700px) {
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
 
   div.bio-contact {
     display: grid;
@@ -305,15 +298,19 @@
 
   div.job-tech {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
 
   .job-tech span {
-    margin: 0 0 0 1rem;
     padding: 0.5rem;
     border: 1px solid var(--lightBlack);
     border-radius: 1rem;
+    min-width: max-content;
+  }
+  .job-tech span:not(:first-of-type) {
+    margin: 0 0 0 1rem;
   }
 
   .dates em, .degree em {
@@ -358,6 +355,44 @@
 
   .bio li {
     margin: 0 1rem;
+  }
+
+  @media screen and (max-width:700px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    div.job-headline {
+      flex-direction: column;
+      padding-bottom: 1rem;
+      align-items: flex-start;
+    }
+    div.job-tech {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .job-tech span {
+      margin: 0 1rem 0 0;
+    }
+    .job-tech span:not(:first-of-type) {
+      margin: 0 1rem 0 0;
+    }
+    div.bio-contact {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 3rem;
+      grid-gap: 0;
+    }
+    section.bio {
+      grid-row: 2 / span 1;
+    }
+    section.contact {
+      grid-row: 1 / span 1;
+    }
+    div.education-courses {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+    }
   }
 
 </style>
