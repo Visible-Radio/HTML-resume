@@ -292,16 +292,19 @@
 
   div.job-headline {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 0 0 -1rem 0;
+    /* margin: 0 0 -1rem 0; */
+    gap: 0.5rem;
   }
 
   div.job-tech {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 0.5rem;
   }
 
   .job-tech span {
@@ -311,7 +314,7 @@
     min-width: max-content;
   }
   .job-tech span:not(:first-of-type) {
-    margin: 0 0 0 1rem;
+    margin: 0;
   }
 
   .dates em, .degree em {
@@ -373,10 +376,10 @@
       justify-content: flex-start;
     }
     .job-tech span {
-      margin: 0 1rem 0 0;
+      margin: 0 ;
     }
     .job-tech span:not(:first-of-type) {
-      margin: 0 1rem 0 0;
+      margin: 0 ;
     }
     div.bio-contact {
       display: grid;
